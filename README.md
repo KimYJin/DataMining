@@ -4,11 +4,11 @@
 ### Corpus Folder <br><br>
 - This folder is the data provided, which is the news data that has been analyzed by morpheme(NNG/NNP).<br>
 - A total of nine articles are classified into 1,787 categories out of thousands of news articles.<br>
- * Learning Data (Input_DataFolder): 1607
- * Model Learning Assessment Data (Val_Data Folder): 80
- * Evaluation Data (Test_Databolder): 100 <br><br>
+  Learning Data (Input_DataFolder): 1607
+  Model Learning Assessment Data (Val_Data Folder): 80
+  Evaluation Data (Test_Databolder): 100 <br><br>
 - News category type
- * children, culture, economy, education, health, life, people, policy, society <br><br>
+  children, culture, economy, education, health, life, people, policy, society <br><br>
  
 ### 1. Feature Set Configuration <br><br>
 - DataMining01.py : Using news articles from folders inside 'Input_Data/Corpus', obtain the top 5000 noun morphemes(NNG/NNP) with high frequency.<br>
@@ -30,6 +30,6 @@
 
 ※ When creating a TF-IDF feature with evaluation data, it is essential that the TF-IDF values are calculated for the 5,000 morphemes(NNG/NNP) determined when generating the learning data. <Br>
 - That is, when you create a TF-IDF vector for one document,<br>
-1) Calculate the frequency of each of the 5,000 nouns determined in the course of the study (TF). <br>
-2) The IDF values for 5000 nouns in the current document are used in accordance with the IDF values for each morphed element used in the learning process.(IDF) <br>
-3) 1), 2) The values of TF and IDF are obtained, multiplying these two values and normalizing the entire vector. The vectors produced are the TF-IDF vectors for one document in the final evaluation data. <br>
+(1) Calculate the frequency of each of the 5,000 nouns determined in the course of the study (TF). <br>
+(2) The IDF values for 5000 nouns in the current document are used in accordance with the IDF values for each morphed element used in the learning process.(IDF) <br>
+(3) Since the values of TF and IDF were obtained from the (1)(2), multiply these two values by them and regularize the entire vector. The vectors produced are the TF-IDF vectors for one document in the final evaluation data.<br><br>

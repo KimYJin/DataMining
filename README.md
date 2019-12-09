@@ -1,14 +1,14 @@
 # DataMining
 ## Text Classification with Tensorflow <br><br>
 
-### Corpus Folder <br><br>
-- This folder is the data provided, which is the news data that has been analyzed by morpheme(NNG/NNP).<br>
+### Corpus Folder <br>
+#### This folder is the data provided, which is the news data that has been analyzed by morpheme(NNG/NNP).<br>
 #### A total of nine articles are classified into 1,787 categories out of thousands of news articles.<br>
-  Learning Data (Input_DataFolder): 1607<br>
-  Model Learning Assessment Data (Val_Data Folder): 80<br>
-  Evaluation Data (Test_Databolder): 100 <br>
+  - Learning Data (Input_DataFolder): 1607<br>
+  - Model Learning Assessment Data (Val_Data Folder): 80<br>
+  - Evaluation Data (Test_Databolder): 100 <br>
 #### News category type<br>
-  children, culture, economy, education, health, life, people, policy, society <br><br>
+  - children, culture, economy, education, health, life, people, policy, society <br><br>
  
 ### 1. Feature Set Configuration <br><br>
 - DataMining01.py : Using news articles from folders inside 'Input_Data/Corpus', obtain the top 5000 noun morphemes(NNG/NNP) with high frequency.<br>

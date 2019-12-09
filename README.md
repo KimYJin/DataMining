@@ -21,18 +21,18 @@
 - **KimYoonJin Folder** : Store the results of the generated learning data and evaluation data. <br><br>
   
 ### 2-1. Create learning data for the model <br>
-- Use Input_Data in the Corpus folder provided to create learning data.
-- Create a folder called 'Input_Data' inside the 'KimYoonJin' folder, and create folders corresponding to each category just like the configuration of 'Input_Data/Corpus'.
-- Each category stores text files that record the TF-IDF values of each document in each category of 'Input_Data/Corpus'. <br><br>
+- Use *Input_Data* in the Corpus folder provided to create learning data.
+- Create a folder called *Input_Data* inside the *KimYoonJin* folder, and create folders corresponding to each category just like the configuration of *Input_Data/Corpus*.
+- Each category stores text files that record the TF-IDF values of each document in each category of *Input_Data/Corpus*. <br><br>
 
 ### 2-2. Create evaluation data for the model <br>
-- Use Test_Data and Val_Data in the Corpus folder provided to create evaluation data.
-- Create a folder with the name 'Test_Feature_Data', 'Val_Feature_Data' inside the 'KimYoonJin' folder.
-- Using the evaluation data of 'Test_Data', obtain the TF-IDF value and save it in 'Test_Feature_Data'.
-- Using the evaluation data of 'Val_Data', obtain the TF-IDF value and save it in 'Val_Feature_Data'.<br><br>
+- Use *Test_Data* and *Val_Data* in the *Corpus folder* provided to create evaluation data.
+- Create a folder with the name *Test_Feature_Data*, *Val_Feature_Data* inside the *KimYoonJin* folder.
+- Using the evaluation data of *Test_Data*, obtain the TF-IDF value and save it in *Test_Feature_Data*.
+- Using the evaluation data of *Val_Data*, obtain the TF-IDF value and save it in *Val_Feature_Data*.<br><br>
 
-#### ※ When creating a TF-IDF feature with evaluation data, it is essential that the TF-IDF values are calculated for the 5,000 morphemes(NNG/NNP) determined when generating the learning data. <br>
+#### ※ When creating a TF-IDF feature with evaluation data, it is essential that the TF-IDF values are calculated for the 5,000 noun morphemes(NNG/NNP) determined when generating the learning data. <br>
 - That is, when you create a TF-IDF vector for one document,<br>
 (1) Calculate the frequency of each of the 5,000 nouns determined in the course of the study (TF). <br>
-(2) The IDF values for 5000 nouns in the current document are used in accordance with the IDF values for each morphed element used in the learning process.(IDF) <br>
+(2) The IDF values for 5000 noun morphemes(NNG/NNP) in the current document are used in accordance with the IDF values for each morphed element used in the learning process.(IDF) <br>
 (3) Since the values of TF and IDF were obtained from the (1)(2), multiply these two values by them and regularize the entire vector. The vectors produced are the TF-IDF vectors for one document in the final evaluation data.<br><br>

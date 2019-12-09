@@ -4,10 +4,10 @@
 ### Corpus Folder <br><br>
 - This folder is the data provided, which is the news data that has been analyzed by morpheme(NNG/NNP).<br>
 - A total of nine articles are classified into 1,787 categories out of thousands of news articles.<br>
-  Learning Data (Input_DataFolder): 1607
-  Model Learning Assessment Data (Val_Data Folder): 80
-  Evaluation Data (Test_Databolder): 100 <br><br>
-- News category type
+  Learning Data (Input_DataFolder): 1607<br>
+  Model Learning Assessment Data (Val_Data Folder): 80<br>
+  Evaluation Data (Test_Databolder): 100 <br>
+- News category type<br>
   children, culture, economy, education, health, life, people, policy, society <br><br>
  
 ### 1. Feature Set Configuration <br><br>

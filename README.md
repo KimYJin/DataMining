@@ -1,31 +1,31 @@
 # DataMining
 ## Text Classification with Tensorflow <br><br>
 
-### Corpus Folder <br>
-#### This folder is the data provided, which is the news data that has been analyzed by morpheme(NNG/NNP).<br>
-#### A total of nine articles are classified into 1,787 categories out of thousands of news articles.<br>
-  - Learning Data (Input_DataFolder): 1607<br>
-  - Model Learning Assessment Data (Val_Data Folder): 80<br>
-  - Evaluation Data (Test_Databolder): 100 <br>
-#### News category type<br>
-  - children, culture, economy, education, health, life, people, policy, society <br><br>
+### 0. Corpus Folder <br>
+- This folder is the data provided, which is the news data that has been analyzed by morpheme(NNG/NNP).<br>
+- A total of nine articles are classified into 1,787 categories out of thousands of news articles.<br>
+  *Learning Data (Input_DataFolder): 1607* <br>
+  *Model Learning Assessment Data (Val_Data Folder): 80* <br>
+  *Evaluation Data (Test_Databolder): 100* <br>
+- News category type<br>
+  *children, culture, economy, education, health, life, people, policy, society* <br><br>
  
-### 1. Feature Set Configuration <br><br>
-#### DataMining01.py : Using news articles from folders inside 'Input_Data/Corpus', Find the top 5000 noun morphemes(NNG/NNP) with high frequency.<br>
+### 1. Feature Set Configuration <br>
+- **DataMining01.py** : Using news articles from folders inside 'Input_Data/Corpus', Find the top 5000 noun morphemes(NNG/NNP) with high frequency.<br>
 - List noun morphemes(NNG/NNP) in frequency order
 - Arrange in ascending order if frequency is equal
 - Save Results to Output01.txt File  <br><br>
 
-### 2. Create learning data & evaluation data for the model <br><br>
-#### DataMining02.py : Create learning data using 'Input_Data/Corpus', and create evaluation data using 'Test_Feature_Data/Corpus', 'Val_Feature_Data/Corpus'<br>
-#### KimYoonJin Folder : Store the results of the generated learning data and evaluation data.
+### 2. Create learning data & evaluation data for the model <br>
+- **DataMining02.py** : Create learning data using 'Input_Data/Corpus', and create evaluation data using 'Test_Feature_Data/Corpus', 'Val_Feature_Data/Corpus'<br>
+- **KimYoonJin Folder** : Store the results of the generated learning data and evaluation data. <br><br>
   
-### 2-1. Create learning data for the model <br><br>
+### 2-1. Create learning data for the model <br>
 - Use Input_Data in the Corpus folder provided to create learning data.
 - Create a folder called 'Input_Data' inside the 'KimYoonJin' folder, and create folders corresponding to each category just like the configuration of 'Input_Data/Corpus'.
 - Each category stores text files that record the TF-IDF values of each document in each category of 'Input_Data/Corpus'. <br><br>
 
-### 2-2. Create evaluation data for the model <br><br>
+### 2-2. Create evaluation data for the model <br>
 - Use Test_Data and Val_Data in the Corpus folder provided to create evaluation data.
 - Create a folder with the name 'Test_Feature_Data', 'Val_Feature_Data' inside the 'KimYoonJin' folder.
 - Using the evaluation data of 'Test_Data', obtain the TF-IDF value and save it in 'Test_Feature_Data'.

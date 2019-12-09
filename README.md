@@ -8,19 +8,19 @@
  * Model Learning Assessment Data (Val_Data Folder): 80
  * Evaluation Data (Test_Databolder): 100 <br><br>
 - News category type
- * children, culture, economy, education, health, life, people, policy, society
-
+ * children, culture, economy, education, health, life, people, policy, society <br><br>
+ 
 ### 1. Feature Set Configuration <br><br>
 - DataMining01.py : Using news articles from folders inside 'Input_Data/Corpus', obtain the top 5000 noun morphemes(NNG/NNP) with high frequency.<br>
 - List noun morphemes(NNG/NNP) in frequency order
 - Arrange in ascending order if frequency is equal
-- Save Results to Output01.txt File
+- Save Results to Output01.txt File  <br><br>
 
 ### 2-1. Create learning data for the model <br><br>
 - Create learning data using 'Input_Data/Corpus' folder provided.
 - Create a new folder called 'KimYoonJin'.
 - Create a folder called 'Input_Data' inside the 'KimYoonJin' folder, and create folders corresponding to each category just like the configuration of 'Input_Data/Corpus'.
-- Each category stores text files that record the TF-IDF values of each document in each category of 'Input_Data/Corpus'.
+- Each category stores text files that record the TF-IDF values of each document in each category of 'Input_Data/Corpus'. <br><br>
 
 ### 2-2. Create evaluation data for the model <br><br>
 - Use Test_Data and Val_Data in the Corpus folder provided to create evaluation data.

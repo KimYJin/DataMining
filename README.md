@@ -38,10 +38,10 @@
 (3) Since the values of TF and IDF were obtained from the (1)(2), multiply these two values by them and regularize the entire vector. The vectors produced are the TF-IDF vectors for one document in the final evaluation data.<br><br>
 
 ### 3. Determine the best hyper-parameters with the highest performance by the model <br>
-<img src="https://user-images.githubusercontent.com/23073504/70858221-63726c80-1f41-11ea-81aa-6a9e73a3db8b.png" width="50%"/>
+<img src="https://user-images.githubusercontent.com/23073504/70858221-63726c80-1f41-11ea-81aa-6a9e73a3db8b.png" width="50%"/><br>
 - **Student_update/parameters.ini** : Files that store hyperparameter values for model training<br>
 - **Student_update/main.py** : Study the model with the TF-IDF feature of each document in *Input_Data* folder, evaluate the model with the TF-IDF feature of the data in the *Val_Data* folder, and output the result value with the TF-IDF feature of the evaluation data in the *Test_Feature_Data* folder. <br>
-- *output.txt* and *answer.txt* files are created after the model has been studied and evaluated normally.<br><br>
+- *output.txt* and *answer.txt* files are created after the model has been studied and evaluated normally.<br>
 - *output.txt* : The probability value that the model predicts that the evaluation data will belong to each category(0~8).<br>
 - *answer.txt* : Category index value(0~8) to which the evaluation data actually belongs. <br><br>
 

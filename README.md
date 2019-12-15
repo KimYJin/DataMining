@@ -40,11 +40,16 @@
 ### 3. Determine the best hyper-parameters with the highest performance by the model <br>
 <img src="https://user-images.githubusercontent.com/23073504/70858221-63726c80-1f41-11ea-81aa-6a9e73a3db8b.png" width="50%"/><br>
 - **Student_update/parameters.ini** : Files that store hyperparameter values for model training<br>
-- **Student_update/main.py** : Study the model with the TF-IDF feature of each document in *Input_Data* folder, evaluate the model with the TF-IDF feature of the data in the *Val_Data* folder, and output the result value with the TF-IDF feature of the evaluation data in the *Test_Feature_Data* folder. <br>
+- **Student_update/main.py** <br>
+(1) Train the model with the TF-IDF feature of each document in *Input_Data* folder<br>
+(2) evaluate the model with the TF-IDF feature of the data in the *Val_Data* folder<br>
+(3) output the result value with the TF-IDF feature of the evaluation data in the *Test_Feature_Data* folder. <br>
 - *output.txt* and *answer.txt* files are created after the model has been studied and evaluated normally.<br>
 - *output.txt* : The probability value that the model predicts that the evaluation data will belong to each category(0~8).<br>
 - *answer.txt* : Category index value(0~8) to which the evaluation data actually belongs. <br><br>
 
 ### 4. Evaluate the performance of the model. <br>
-- **DataMining03.py** : Determines the index of the category(0~8) with the highest probability for each row in the *output.txt* file. Compute Micro-F1, Macro-F1 scores by comparing the category index information of the document predicted by the model with the actual correct category shown in *answer.txt*.<br>
+- **DataMining03.py** <br>
+(1) Determines the index of the category(0~8) with the highest probability for each row in the *output.txt* file. <br>
+(2) Compute Micro-F1, Macro-F1 scores by comparing the category index information of the document predicted by the model with the actual correct category shown in *answer.txt*.<br>
 <img src="https://user-images.githubusercontent.com/23073504/70858219-52c1f680-1f41-11ea-8a1a-62fd9ba98b25.JPG" width="50%"/><br><br>

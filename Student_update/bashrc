@@ -1,0 +1,1 @@
+export PATH="/home/nlplab/anaconda3/bin:$PATH"

@@ -49,7 +49,7 @@
 - *answer.txt* : Category index value(0~8) to which the evaluation data actually belongs. <br><br>
 
 ### 4. Evaluate the performance of the model. <br>
+<img src="https://user-images.githubusercontent.com/23073504/70858219-52c1f680-1f41-11ea-8a1a-62fd9ba98b25.JPG" width="50%"/><br>
 - **DataMining03.py** <br>
 (1) Determines the index of the category(0~8) with the highest probability for each row in the *output.txt* file. <br>
-(2) Compute Micro-F1, Macro-F1 scores by comparing the category index information of the document predicted by the model with the actual correct category shown in *answer.txt*.<br>
-<img src="https://user-images.githubusercontent.com/23073504/70858219-52c1f680-1f41-11ea-8a1a-62fd9ba98b25.JPG" width="50%"/><br><br>
+(2) Compute Micro-F1, Macro-F1 scores by comparing the category index information of the document predicted by the model with the actual correct category shown in *answer.txt*.<br><br>
